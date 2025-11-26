@@ -8,7 +8,7 @@ export default function Header() {
         <nav className="nav-left" aria-label="Primary navigation">
           <img
             className="brand"
-            src="https://icones.pro/wp-content/uploads/2021/06/icone-de-l-education-orange.png"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXw6KEcDzgqA_txoidC-4F_aCel0xqu4SaKg_I6D3a660g7ivzEUxwvtDlftF_LkZicU&usqp=CAU"
           />
           <ul className="nav-links">
             <li>

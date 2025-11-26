@@ -1,7 +1,9 @@
 /* Banner for landing page */
 .banner {
-    background: linear-gradient(180deg, #0f172a 0%, #061025 100%);
-    color: #FFFFFF;
+    /* allow the banner colors to be overridden by a theme wrapper via CSS variables */
+    /* teal theme default */
+    background: var(--banner-bg, linear-gradient(180deg, #053642, #0a5252));
+    color: var(--banner-color, #FFFFFF);
     padding: 2.25rem 0;
 }
 
@@ -12,7 +14,6 @@
     padding: 0 1.25rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -23,7 +24,7 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--panel-muted);
     padding: 0.45rem 0.8rem;
     border-radius: 10px;
 }
@@ -40,7 +41,7 @@
 
 .badge-title {
     font-weight: 700;
-    color: #FFD39E;
+    color: var(--accent);
     word-spacing: 0.3rem;
 }
 
@@ -60,7 +61,7 @@
 
 .banner-desc {
     margin: 0;
-    color: rgba(255, 255, 255, 0.85)
+    color: var(--text-muted)
 }
 
 .banner-ctas {
@@ -70,8 +71,9 @@
 }
 
 .btn.primary {
-    background: #FFAC1C;
-    color: #071427;
+    /* tuned primary CTA for the teal theme */
+    background: var(--accent);
+    color: var(--accent-contrast);
     border-radius: 8px;
     padding: 0.55rem 1rem;
     border: 0;

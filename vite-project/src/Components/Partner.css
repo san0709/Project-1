@@ -3,8 +3,9 @@
     height: 180px;
     display: flex;
     align-items: center;
-    background: #fafafa;
-    border-top: 1px solid #e6e6e6;
+    /* teal band to match site theme */
+    background: linear-gradient(180deg, #0b3f3f, #052926);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .partners .partners-inner {
@@ -47,7 +48,7 @@
     content: "";
     width: 2px;
     height: 48px;
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.08);
     margin-left: 1rem;
     margin-right: 1rem;
     display: inline-block;

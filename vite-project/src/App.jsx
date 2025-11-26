@@ -1,10 +1,10 @@
 import Header from "./Components/Header.jsx";
 import "./Components/Header.css";
-import Banner from "./Components/Banner.jsx";
 import Partner from "./Components/Partner.jsx";
 import Courses from "./Components/Courses.jsx";
-import Image from "./Components/Image.jsx";
+// Banner and Image are used inside ThemeCompare; keep imports inside their components
 import BenefitSection from "./Components/BenefitSection.jsx";
+import Banner from "./Components/Banner.jsx";
 
 function App() {
   return (
@@ -12,9 +12,8 @@ function App() {
       <Header />
       <Banner />
       <Partner />
-      {/* <Image /> */}
-      <BenefitSection />
       <Courses />
+      <BenefitSection />
     </>
   );
 }

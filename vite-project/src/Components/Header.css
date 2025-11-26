@@ -1,10 +1,11 @@
 /* Header styles for landing page */
 .site-header {
-    height: 70px;
+    height: 90px;
     display: flex;
     align-items: center;
-    background: #ffffff;
-    border-bottom: 2px solid #FFAC1C;
+    /* teal header background */
+    background: linear-gradient(180deg, var(--bg-700), var(--bg-800));
+    border-bottom: 2px solid var(--accent);
     box-sizing: border-box;
 }
 
@@ -26,13 +27,14 @@
 }
 
 .brand {
-    width: 48px;
-    height: 48px;
+    width: 78px;
+    height: 68px;
     display: inline-flex;
     align-items: center;
     gap: 1.5rem;
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    border-radius: 50%;
 }
 
 .nav-links {
@@ -51,14 +53,14 @@
 .nav-links a {
     display: inline-block;
     padding: 0.6rem 0.8rem;
-    color: #111827;
+    color: var(--text-primary);
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500
 }
 
 .nav-links a:hover {
-    background: #FFAC1C;
+    background: var(--panel-muted);
 }
 
 .nav-right {
@@ -77,13 +79,16 @@
 }
 
 .btn.signup {
-    color: black;
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .btn.login {
-    background: #FFAC1C;
-    color: white;
+    background: var(--accent);
+    color: var(--accent-contrast);
     font-weight: 600;
+    border: 0;
 }
 
 /* small helper for screen-reader-only text */
