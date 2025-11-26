@@ -1,0 +1,137 @@
+.pricing {
+    padding: 3rem 0;
+    background: linear-gradient(180deg, var(--bg-700), var(--bg-800));
+    color: var(--text-primary);
+}
+
+.pricing-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.pricing-header h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+}
+
+.pricing-lead {
+    margin: 0 0 1.25rem 0;
+    color: var(--text-muted);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.plan {
+    background: var(--panel);
+    color: var(--panel-text);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    position: relative;
+}
+
+.plan-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), var(--accent));
+    color: var(--accent-contrast);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.78rem;
+}
+
+.plan-title {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.plan-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+.plan-price {
+    margin: 0;
+    font-weight: 800;
+    color: var(--panel-text);
+}
+
+.price-amount {
+    font-size: 1.15rem;
+}
+
+.plan-desc {
+    margin: 0.6rem 0;
+    color: var(--panel-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.plan-features {
+    margin: 0.6rem 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    color: var(--panel-text-muted);
+}
+
+.plan-actions {
+    margin-top: 0.9rem;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(7, 20, 39, 0.06);
+    color: var(--panel-text);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--accent-contrast);
+    border-radius: 8px;
+}
+
+.plan-link {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.plan-pro {
+    border: 2px solid rgba(255, 184, 77, 0.14);
+}
+
+@media (max-width: 720px) {
+    .pricing-inner {
+        padding: 0 1rem;
+    }
+
+    .pricing-grid {
+        gap: 0.9rem;
+    }
+}

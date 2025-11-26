@@ -6,6 +6,7 @@ import Courses from "./Components/Courses.jsx";
 import BenefitSection from "./Components/BenefitSection.jsx";
 import Testimonial from "./Components/Testimonial.jsx";
 import Banner from "./Components/Banner.jsx";
+import Pricing from "./Components/Pricing.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Courses />
       <BenefitSection />
       <Testimonial />
+      <Pricing />
     </>
   );
 }
