@@ -1,0 +1,124 @@
+/* Benefits section */
+.benefits {
+    padding: 3.25rem 0;
+    background: linear-gradient(180deg, #ffffff, #fbfbfd)
+}
+
+.benefits-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.25rem
+}
+
+.benefits-header {
+    margin-bottom: 1.25rem
+}
+
+.benefits-header h2 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    color: #0f172a
+}
+
+.benefits-lead {
+    margin: 0;
+    color: #374151;
+    line-height: 1.5
+}
+
+.benefits-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.benefits-action {
+    margin-left: 1rem
+}
+
+.btn.view-all {
+    background: transparent;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 0.45rem 0.8rem;
+    border-radius: 8px;
+    font-weight: 700
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 2.6rem 2.2rem;
+    /* ensure rows size naturally and items align to the top of each grid cell */
+    grid-auto-rows: auto;
+    align-items: start;
+    justify-content: center;
+}
+
+.benefit-card {
+    /* let the grid control width; cap card width so grid works responsively */
+    width: 100%;
+    max-width: 300px;
+    min-height: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+    padding: 1.25rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.card-media {
+    height: 64px;
+    background: linear-gradient(90deg, #eef2ff, #fef3c7);
+    border-radius: 10px
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.card-body {
+    margin: 0.35rem 0 0 0;
+    color: #4b5563;
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+/* make sure the grid remains centered on wide screens */
+@media(min-width:1280px) {
+    .benefits-inner {
+        padding: 0 2rem
+    }
+}
+
+@media(max-width:720px) {
+    .benefit-card {
+        width: 100%;
+        height: auto
+    }
+
+    .benefits-grid {
+        gap: 1.25rem;
+    }
+
+    .card-media {
+        height: 72px
+    }
+
+    .benefits-heading-row {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .benefits-action {
+        align-self: flex-end
+    }
+}

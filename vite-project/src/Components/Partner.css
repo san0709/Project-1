@@ -1,0 +1,77 @@
+/* Partner/brand row */
+.partners {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border-top: 1px solid #e6e6e6;
+}
+
+.partners .partners-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.brand-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 100%
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.75rem;
+    flex: 1;
+    justify-content: center
+}
+
+.brand-item img {
+    max-height: 56px;
+    max-width: 160px;
+    object-fit: contain;
+    opacity: 0.95
+}
+
+/* vertical separator between brand items */
+.brand-item:not(:last-child)::after {
+    content: "";
+    width: 2px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.08);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    align-self: center
+}
+
+/* small screens: wrap and keep logos visible */
+@media (max-width:720px) {
+    .partners {
+        height: auto;
+        padding: 1rem 0
+    }
+
+    .partners .partners-inner {
+        flex-direction: column;
+        gap: 0.75rem
+    }
+
+    .brand-item {
+        justify-content: center;
+        padding: 0.4rem
+    }
+
+    .brand-item:not(:last-child)::after {
+        display: none
+    }
+}

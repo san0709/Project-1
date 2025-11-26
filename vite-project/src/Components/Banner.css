@@ -1,0 +1,105 @@
+/* Banner for landing page */
+.banner {
+    background: linear-gradient(180deg, #0f172a 0%, #061025 100%);
+    color: #FFFFFF;
+    padding: 2.25rem 0;
+}
+
+.banner-inner {
+    /* aligns with header container width */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.45rem 0.8rem;
+    border-radius: 10px;
+}
+
+.badge-icon {
+    background: transparent;
+    color: #fff
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column
+}
+
+.badge-title {
+    font-weight: 700;
+    color: #FFD39E;
+    word-spacing: 0.3rem;
+}
+
+.badge-lead {
+    margin: 2px;
+    font-weight: 700;
+    font-size: 2rem;
+    word-spacing: 0.3rem;
+}
+
+.banner-sub {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    word-spacing: 0.2rem;
+}
+
+.banner-desc {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85)
+}
+
+.banner-ctas {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.6rem
+}
+
+.btn.primary {
+    background: #FFAC1C;
+    color: #071427;
+    border-radius: 8px;
+    padding: 0.55rem 1rem;
+    border: 0;
+    font-weight: 700
+}
+
+.btn.secondary {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    font-weight: 600
+}
+
+/* Responsive */
+@media (max-width:720px) {
+    .banner-inner {
+        align-items: center;
+        text-align: center
+    }
+
+    .badge {
+        width: 100%;
+        justify-content: center
+    }
+
+    .banner-ctas {
+        justify-content: center
+    }
+}
