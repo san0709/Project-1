@@ -7,7 +7,9 @@ export default function Pricing() {
       <div className="pricing-inner container">
         <header className="pricing-header">
           <h2 id="pricing-heading">Pricing plans</h2>
-          <p className="pricing-lead">Pick a plan that fits your learning goals — upgrade any time.</p>
+          <p className="pricing-lead">
+            Pick a plan that fits your learning goals — upgrade any time.
+          </p>
         </header>
 
         <div className="pricing-grid" role="list">
@@ -15,10 +17,14 @@ export default function Pricing() {
             <div className="plan-body">
               <div className="plan-top">
                 <h3 className="plan-title">Free</h3>
-                <p className="plan-price"><span className="price-amount">$0</span>/mo</p>
+                <p className="plan-price">
+                  <span className="price-amount">$0</span>/mo
+                </p>
               </div>
 
-              <p className="plan-desc">Perfect to try course previews and a few guided projects.</p>
+              <p className="plan-desc">
+                Perfect to try course previews and a few guided projects.
+              </p>
 
               <ul className="plan-features">
                 <li>Access to selected lessons</li>
@@ -27,8 +33,19 @@ export default function Pricing() {
               </ul>
 
               <div className="plan-actions">
-                <button className="btn btn-outline" aria-label="Choose Free plan">Start free</button>
-                <a href="#" className="plan-link" aria-label="View Free details">Details</a>
+                <button
+                  className="btn btn-outline"
+                  aria-label="Choose Free plan"
+                >
+                  Start free
+                </button>
+                <a
+                  href="#"
+                  className="plan-link"
+                  aria-label="View Free details"
+                >
+                  Details
+                </a>
               </div>
             </div>
           </article>
@@ -38,10 +55,15 @@ export default function Pricing() {
             <div className="plan-body">
               <div className="plan-top">
                 <h3 className="plan-title">Pro</h3>
-                <p className="plan-price"><span className="price-amount">$24</span>/mo</p>
+                <p className="plan-price">
+                  <span className="price-amount">$24</span>/mo
+                </p>
               </div>
 
-              <p className="plan-desc">Full access to all courses, projects and dedicated career support.</p>
+              <p className="plan-desc">
+                Full access to all courses, projects and dedicated career
+                support.
+              </p>
 
               <ul className="plan-features">
                 <li>All lessons & projects</li>
@@ -51,8 +73,15 @@ export default function Pricing() {
               </ul>
 
               <div className="plan-actions">
-                <button className="btn btn-primary" aria-label="Choose Pro plan">Get Pro</button>
-                <a href="#" className="plan-link" aria-label="View Pro details">See features</a>
+                <button
+                  className="btn btn-primary"
+                  aria-label="Choose Pro plan"
+                >
+                  Get Pro
+                </button>
+                <a href="#" className="plan-link" aria-label="View Pro details">
+                  See features
+                </a>
               </div>
             </div>
           </article>
