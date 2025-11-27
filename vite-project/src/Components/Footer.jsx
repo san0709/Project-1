@@ -12,7 +12,12 @@ export default function Footer() {
             className="footer-logo"
           />
           <p className="footer-desc">
-            Skillbridge — modern, project-led learning for makers.
+            SKILL BRIDGE — modern, project-led learning for makers. Established
+            in 2014 and acquired by the Zen Group in 2022, Skill bridge is
+            dedicated to providing effective and high-quality learning and
+            skilling programs that transcend language barriers in technology
+            education. Skill bridge today is trusted by over 3 million learners
+            and 2000+ corporate partners.
           </p>
         </div>
 
