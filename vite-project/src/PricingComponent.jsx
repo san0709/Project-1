@@ -1,5 +1,5 @@
-
 import React from "react";
+import "./PricingComponent.css";
 
 const PricingComponent = () => {
   const plans = [
@@ -47,24 +47,26 @@ const PricingComponent = () => {
   return (
     <div className="pricing-container">
       <h2 className="title">Choose Your Plan</h2>
+
       <div className="pricing-grid">
         {plans.map((plan) => (
-          <div
+          <article
             key={plan.name}
             className={`pricing-card ${plan.highlighted ? "highlighted" : ""}`}
+            aria-labelledby={`plan-${plan.name}-title`}
           >
-            <h3>{plan.name}</h3>
+            <h3 id={`plan-${plan.name}-title`}>{plan.name}</h3>
             <p className="price">
               {plan.price}
               <span>{plan.period}</span>
             </p>
-            <ul>
+            <ul aria-label={`${plan.name} features`}>
               {plan.features.map((f) => (
                 <li key={f}>{f}</li>
               ))}
             </ul>
             <button className="pricing-button">{plan.buttonText}</button>
-          </div>
+          </article>
         ))}
       </div>
     </div>
