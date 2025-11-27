@@ -118,8 +118,7 @@
 
 .testimonial-card:focus-within,
 .testimonial-card:hover {
-    transform: translateY(-3px);
-    transition: transform 160ms ease;
+    /* removed interactive transform/transition - restored baseline */
 }
 
 @media (max-width: 720px) {

@@ -25,6 +25,10 @@
   --card-shadow: 0 8px 28px rgba(2, 6, 23, 0.55);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Minimal base resets to keep things consistent */
 html,
 body,
@@ -38,3 +42,4 @@ body {
   background: var(--bg-800);
   color: var(--text-primary)
 }
+

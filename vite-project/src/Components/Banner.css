@@ -20,6 +20,8 @@
     height: 300px;
 }
 
+/* removed entry animations */
+
 .badge {
     display: flex;
     align-items: center;
@@ -79,6 +81,8 @@
     border: 0;
     font-weight: 700
 }
+
+/* hover and focus stay using default browser behavior (no transform/transition) */
 
 .btn.secondary {
     background: transparent;

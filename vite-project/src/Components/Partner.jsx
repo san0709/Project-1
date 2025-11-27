@@ -24,18 +24,22 @@ const BRANDS = [
 ];
 
 export default function Partner() {
-    return (
-              <section className="partners" aria-label="brands">
-          <div className="partners-inner">
-            <div className="brand-list">
-              {BRANDS.map((b) => (
-                <div key={b.name} className="brand-item">
-                  <img src={b.src} alt={`${b.name} logo`} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-    );
+  return (
+    <section className="partners" aria-label="brands">
+      <div className="partners-inner">
+        <ul className="brand-list" aria-label="Partner brands">
+          {BRANDS.map((b) => (
+            <li key={b.name} className="brand-item" aria-label={b.name}>
+              <img
+                src={b.src}
+                alt={`${b.name} logo`}
+                loading="lazy"
+                decoding="async"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
 }

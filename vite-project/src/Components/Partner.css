@@ -1,6 +1,7 @@
 /* Partner/brand row */
 .partners {
-    height: 180px;
+    /* prefer a generous padding rather than a fixed height so we don't overflow */
+    min-height: 140px;
     display: flex;
     align-items: center;
     /* teal band to match site theme */
@@ -9,8 +10,7 @@
 }
 
 .partners .partners-inner {
-    max-width: 1280px;
-    margin: 0 auto;
+    /* staggered entrance - previously used for animation (removed) */
     padding: 0 1.25rem;
     width: 100%;
     display: flex;

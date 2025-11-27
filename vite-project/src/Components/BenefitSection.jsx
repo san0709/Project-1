@@ -28,6 +28,7 @@ export default function BenefitSection() {
       body: "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.",
     },
   ];
+
   return (
     <section className="benefits" aria-labelledby="benefits-heading">
       <div className="benefits-inner container">
@@ -49,15 +50,15 @@ export default function BenefitSection() {
           </p>
         </header>
 
-        <div className="benefits-grid" role="list">
-          {CARDS.map((c, i) => (
-            <article key={i} className="benefit-card" role="listitem">
+        <ul className="benefits-grid">
+          {CARDS.map((c) => (
+            <li key={c.title} className="benefit-card">
               <div className="card-media" aria-hidden="true" />
               <h3 className="card-title">{c.title}</h3>
               <p className="card-body">{c.body}</p>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

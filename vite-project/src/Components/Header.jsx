@@ -9,6 +9,7 @@ export default function Header() {
           <img
             className="brand"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpXw6KEcDzgqA_txoidC-4F_aCel0xqu4SaKg_I6D3a660g7ivzEUxwvtDlftF_LkZicU&usqp=CAU"
+            alt="Skillbridge logo"
           />
           <ul className="nav-links">
             <li>
