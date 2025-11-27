@@ -39,3 +39,90 @@ body {
   background: var(--bg-800);
   color: var(--text-primary)
 }
+
+/* Global button baseline: consistent transitions across components */
+.btn {
+  transition: transform 200ms cubic-bezier(.2, .9, .2, 1),
+    box-shadow 200ms cubic-bezier(.2, .9, .2, 1),
+    background-color 200ms linear,
+    color 200ms linear;
+  will-change: transform, box-shadow;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn:focus {
+  outline: 3px solid rgba(255, 184, 77, 0.16);
+  outline-offset: 4px;
+}
+
+/* Ensure native buttons and page controls also animate consistently */
+button,
+.page-btn {
+  transition: transform 180ms cubic-bezier(.2, .9, .2, 1),
+    box-shadow 180ms cubic-bezier(.2, .9, .2, 1),
+    background-color 180ms linear,
+    color 180ms linear;
+  will-change: transform, box-shadow;
+}
+
+button:hover,
+.page-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Banner entrance animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* apply fading with a small upward movement for hero elements */
+.banner-inner .badge {
+  animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+  animation-delay: 0s;
+}
+
+.banner-inner .banner-sub {
+  animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+  animation-delay: 80ms;
+}
+
+.banner-inner .banner-desc {
+  animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+  animation-delay: 160ms;
+}
+
+.banner-inner .banner-ctas {
+  animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+  animation-delay: 240ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .banner-inner .badge,
+  .banner-inner .banner-sub,
+  .banner-inner .banner-desc,
+  .banner-inner .banner-ctas {
+    animation: none !important;
+  }
+}

@@ -27,18 +27,35 @@ export default function Partner() {
   return (
     <section className="partners" aria-label="brands">
       <div className="partners-inner">
-        <ul className="brand-list" aria-label="Partner brands">
-          {BRANDS.map((b) => (
-            <li key={b.name} className="brand-item" aria-label={b.name}>
-              <img
-                src={b.src}
-                alt={`${b.name} logo`}
-                loading="lazy"
-                decoding="async"
-              />
-            </li>
-          ))}
-        </ul>
+        {/* marquee wrapper: duplicate the track so it appears seamless */}
+        <div className="brand-marquee" aria-hidden="false">
+          <ul className="brand-track" aria-hidden="true">
+            {BRANDS.map((b) => (
+              <li key={b.name} className="brand-item">
+                <img
+                  src={b.src}
+                  alt={`${b.name} logo`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+            ))}
+          </ul>
+
+          {/* duplicate for seamless loop */}
+          <ul className="brand-track" aria-hidden="true">
+            {BRANDS.map((b) => (
+              <li key={b.name + "-copy"} className="brand-item">
+                <img
+                  src={b.src}
+                  alt={`${b.name} logo`}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

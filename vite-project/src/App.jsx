@@ -6,6 +6,7 @@ import BenefitSection from "./Components/BenefitSection.jsx";
 import Testimonial from "./Components/Testimonial.jsx";
 import Banner from "./Components/Banner.jsx";
 import PricingComponent from "./PricingComponent.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <BenefitSection />
       <Testimonial />
       <PricingComponent />
+      <Footer />
     </>
   );
 }

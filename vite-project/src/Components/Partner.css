@@ -19,12 +19,35 @@
     gap: 1rem;
 }
 
+.brand-marquee {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.brand-track {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    /* marquee animation; duration tuned for a pleasant speed */
+    animation: marquee 28s linear infinite;
+}
+
+/* Position the duplicate track so it starts just after the first */
+.brand-track:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+/* fallback static list (keeps compatibility) */
 .brand-list {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
 }
 
 .brand-item {
@@ -40,7 +63,38 @@
     max-height: 56px;
     max-width: 160px;
     object-fit: contain;
-    opacity: 0.95
+    opacity: 0.95;
+    display: block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* faster marquee on small screens */
+@media (max-width: 720px) {
+    .brand-track {
+        animation-duration: 18s;
+    }
+}
+
+/* Disable motion for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .brand-track {
+        animation: none !important;
+    }
+}
+
+/* Pause marquee on hover/focus so users can inspect logos */
+.brand-marquee:hover .brand-track,
+.brand-marquee:focus-within .brand-track {
+    animation-play-state: paused;
 }
 
 /* vertical separator between brand items */

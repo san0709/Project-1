@@ -126,6 +126,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
 .pages {

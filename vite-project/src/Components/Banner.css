@@ -72,6 +72,17 @@
     margin-top: 0.6rem
 }
 
+/* animate CTA buttons individually with a small stagger */
+.banner-ctas .btn:first-child {
+    animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+    animation-delay: 260ms;
+}
+
+.banner-ctas .btn:nth-child(2) {
+    animation: fadeUp 520ms cubic-bezier(.2, .9, .2, 1) both;
+    animation-delay: 320ms;
+}
+
 .btn.primary {
     /* tuned primary CTA for the teal theme */
     background: var(--accent);

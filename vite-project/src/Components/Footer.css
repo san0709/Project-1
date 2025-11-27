@@ -1,0 +1,119 @@
+.site-footer {
+    background: linear-gradient(180deg, var(--bg-800, #052926), var(--bg-900, #041617));
+    color: var(--text-primary, #e6eef9);
+    padding: 3rem 1rem;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 6px 24px rgba(2, 6, 23, 0.35);
+}
+
+.footer-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted, rgba(230, 238, 249, 0.8));
+}
+
+.footer-columns {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+    color: var(--text-primary, #e6eef9);
+}
+
+.footer-contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+}
+
+.footer-contact li {
+    color: var(--text-muted, rgba(230, 238, 249, 0.75));
+    font-size: 0.92rem;
+}
+
+.footer-link {
+    color: var(--accent, #FFB84D);
+    text-decoration: none;
+    margin-left: 0.4rem;
+}
+
+.footer-address {
+    display: inline-block;
+    margin-top: 0.1rem;
+    font-style: normal;
+}
+
+.social-list {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-primary, #e6eef9);
+    text-decoration: none;
+    transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.social-link .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.09);
+    color: var(--panel-text, #071427);
+}
+
+.footer-copyright {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: var(--text-muted, rgba(230, 238, 249, 0.7));
+}
+
+@media (min-width: 800px) {
+    .footer-inner {
+        grid-template-columns: 1fr 480px;
+        align-items: start;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
